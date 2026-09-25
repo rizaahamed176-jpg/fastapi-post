@@ -16,6 +16,6 @@ jobs:
       run: docker build -t fastapi-post .
      -name: docker login 
      -with: ${{DOCKER_USERNAME}}
-            ${{}}
+            ${{DOCKER_TOKEN}}
      -name: docker push
      -run: docker push rizaahamed176
