@@ -15,7 +15,7 @@ jobs:
     - name: Build the Docker image
       run: docker build -t fastapi-post .
      -name: docker login 
-     -with: ${{docker_username}}
-            ${{docker_token}}
+     -with: ${{DOCKER_USERNAME}}
+            ${{}}
      -name: docker push
      -run: docker push rizaahamed176
